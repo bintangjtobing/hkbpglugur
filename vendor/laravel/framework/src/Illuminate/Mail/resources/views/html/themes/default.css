@@ -120,7 +120,7 @@ img {
 /* Body */
 
 .body {
-    background-color: #ffffff;
+    background-color: #fffffff;
     border-bottom: 1px solid #edeff2;
     border-top: 1px solid #edeff2;
     margin: 0;
@@ -132,7 +132,7 @@ img {
 }
 
 .inner-body {
-    background-color: #ffffff;
+    background-color: #fffffff;
     margin: 0 auto;
     padding: 0;
     width: 570px;
@@ -270,7 +270,7 @@ img {
 /* Promotions */
 
 .promotion {
-    background-color: #ffffff;
+    background-color: #fffffff;
     border: 2px dashed #9ba2ab;
     margin: 0;
     margin-bottom: 25px;

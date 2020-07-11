@@ -56,10 +56,10 @@ class HtmlFormatter extends NormalizerFormatter
     {
         $th = htmlspecialchars($th, ENT_NOQUOTES, 'UTF-8');
         if ($escapeTd) {
-            $td = '<pre>'.htmlspecialchars($td, ENT_NOQUOTES, 'UTF-8').'</pre>';
+            $td = '<pre>' . htmlspecialchars($td, ENT_NOQUOTES, 'UTF-8') . '</pre>';
         }
 
-        return "<tr style=\"padding: 4px;text-align: left;\">\n<th style=\"vertical-align: top;background: #ccc;color: #000\" width=\"100\">$th:</th>\n<td style=\"padding: 4px;text-align: left;vertical-align: top;background: #eee;color: #000\">".$td."</td>\n</tr>";
+        return "<tr style=\"padding: 4px;text-align: left;\">\n<th style=\"vertical-align: top;background: #ccc;color: #000\" width=\"100\">$th:</th>\n<td style=\"padding: 4px;text-align: left;vertical-align: top;background: #eee;color: #000\">" . $td . "</td>\n</tr>";
     }
 
     /**
@@ -73,7 +73,7 @@ class HtmlFormatter extends NormalizerFormatter
     {
         $title = htmlspecialchars($title, ENT_NOQUOTES, 'UTF-8');
 
-        return '<h1 style="background: '.$this->logLevels[$level].';color: #ffffff;padding: 5px;" class="monolog-output">'.$title.'</h1>';
+        return '<h1 style="background: ' . $this->logLevels[$level] . ';color: #fffffff;padding: 5px;" class="monolog-output">' . $title . '</h1>';
     }
 
     /**
@@ -107,7 +107,7 @@ class HtmlFormatter extends NormalizerFormatter
             $output .= $this->addRow('Extra', $embeddedTable, false);
         }
 
-        return $output.'</table>';
+        return $output . '</table>';
     }
 
     /**
